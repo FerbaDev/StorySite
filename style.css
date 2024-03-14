@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 :root {
   --clr-background: #eae6f3;
-  --clr-background2: #99e474;
+  --clr-background2: #c3cebd;
+  --clr-background-btn-cta: #212220;
   --font-roboto: "Roboto Mono", monospace;
 }
 * {
@@ -13,14 +14,23 @@
 body {
   overflow-x: hidden;
 }
+.btn-cta {
+  color: aliceblue;
+  font-weight: 200;
+  background-color: var(--clr-background-btn-cta);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
 /****** HEADER **********/
 header {
   max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-inline: 20px;
   background-color: var(--clr-background);
+  height: 10vh;
 }
 a {
   color: inherit;
@@ -51,8 +61,32 @@ a:hover {
   display: none;
 }
 
+/****** SECCION TITULO **********/
 main {
   max-width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--clr-background2);
+}
+.ts-info {
+  padding: 100px;
+  background-color: var(--clr-background2);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+.titulo {
+  font-size: 3em;
+}
+.ts-img-container {
+  background-color: var(--clr-background2);
+  width: 50%;
+  display: grid;
+  place-items: center;
 }
 
 /******************************************************************************************/
@@ -113,7 +147,27 @@ main {
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  main {
+    flex-direction: column;
+  }
+  .ts-info {
+    padding: 20px;
+    width: 100%;
+  }
+  .titulo {
+    font-size: 2em;
+  }
+  .ts-img-container {
+    width: 100%;
+    height: 45vh;
+  }
+  .ts-img-container img {
+    max-width: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
