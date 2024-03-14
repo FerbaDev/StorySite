@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 :root {
-  --clr-background: #eeebf4;
-  --clr-background2: rgb(139, 109, 199) 4;
+  --clr-background: #eae6f3;
+  --clr-background2: #99e474;
   --font-roboto: "Roboto Mono", monospace;
 }
 * {
@@ -19,8 +19,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--padleft);
-  background-color: var(--clr-background2);
+  padding: 20px;
+  background-color: var(--clr-background);
 }
 a {
   color: inherit;
@@ -30,13 +30,15 @@ a:hover {
   transform: scale(1.1);
 }
 .logo {
-  color: var(--clr-rosita);
+  color: rgb(0, 0, 0);
   font-size: 2em;
+  font-weight: 400;
 }
 .nav-list {
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  padding-right: 20px;
 }
 
 .nav-list li a {
@@ -58,6 +60,9 @@ main {
 /**************** media queries ********************/
 
 @media screen and (max-width: 780px) {
+  header {
+    padding-inline: 20px;
+  }
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -68,7 +73,8 @@ main {
   }
 
   .abrir-menu {
-    color: aqua;
+    color: rgb(8, 12, 12);
+
   }
 
   .cerrar-menu {
@@ -99,6 +105,7 @@ main {
   .nav-list {
     flex-direction: column;
     align-items: end;
+    padding-right: 0;
   }
 
   .nav-list li a {
