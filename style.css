@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 :root {
-  --clr-background: #eeeeee;
-  --clr-background2: #dadada;
+  --clr-background: #f4f4f4;
+  --clr-background2: #dddddd;
   --clr-background-btn-cta: #212220;
   --font-roboto: "Roboto Mono", monospace;
 }
@@ -82,7 +82,6 @@ main {
   font-size: 3em;
 }
 .ts-img-container {
-
   width: 50%;
   display: grid;
   place-items: center;
@@ -112,7 +111,6 @@ main {
   background-color: var(--clr-background);
 }
 .riesgos-img-container {
-
   padding: 50px;
 }
 .riesgos-info-container {
@@ -215,10 +213,10 @@ main {
   background-color: var(--clr-background);
 }
 .plan-cards-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 .card-plan {
   display: flex;
@@ -251,6 +249,19 @@ gap: 2em;
   justify-content: center;
   gap: 2em;
 }
+/********************** SECCIÓN MAPA ****************/
+.mapa {
+  padding-block: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--clr-background);
+}
+.info-lugar {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
@@ -270,7 +281,6 @@ gap: 2em;
 
   .abrir-menu {
     color: rgb(8, 12, 12);
-
   }
 
   .cerrar-menu {
