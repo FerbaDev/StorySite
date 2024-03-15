@@ -185,26 +185,57 @@ main {
   gap: 3.5em;
   background-color: var(--clr-background2);
 }
-.planes-container {
+.precios-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.card-planes {
+.card-precios {
   display: flex;
   width: 25%;
   flex-direction: column;
   text-align: center;
   gap: 1.3em;
 }
-.card-planes-title {
+.card-precios-title {
   font-weight: bold;
 }
-.card-planes span {
+.card-precios span {
   font-size: 3em;
 }
+/********************** SECCIÓN PLANTILLA DE PLAN ****************/
+.plan-container {
+  padding-block: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+  padding-inline: 20px;
+  background-color: var(--clr-background);
+}
+.plan-cards-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2em;
+}
+.card-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 200px;
+  gap: 2em;
+}
 
-
+.plan-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
