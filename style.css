@@ -262,6 +262,30 @@ main {
   flex-direction: column;
   gap: 1em;
 }
+/********************** FOOTER ****************/
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-head {
+  display: flex;
+  flex-direction: row;
+}
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+}
+.footer-copyright {
+  display: flex;
+  gap: 0.5em;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
