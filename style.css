@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 :root {
-  --clr-background: #eae6f3;
-  --clr-background2: #c3cebd;
+  --clr-background: #eeeeee;
+  --clr-background2: #dadada;
   --clr-background-btn-cta: #212220;
   --font-roboto: "Roboto Mono", monospace;
 }
@@ -18,7 +18,7 @@ body {
   color: aliceblue;
   font-weight: 200;
   background-color: var(--clr-background-btn-cta);
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
 }
@@ -67,11 +67,11 @@ main {
   min-height: 90vh;
   display: flex;
   flex-direction: row;
-  background-color: var(--clr-background2);
+  background-color: var(--clr-background);
 }
 .ts-info {
   padding: 100px;
-  background-color: var(--clr-background2);
+
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -83,12 +83,77 @@ main {
   font-size: 3em;
 }
 .ts-img-container {
-  background-color: var(--clr-background2);
+
   width: 50%;
   display: grid;
   place-items: center;
 }
+/****** COLUMNA DE VALORES **********/
+.valores {
+  background-color: var(--clr-background2);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.valores-casos {
+  display: flex;
+  align-items: center;
+}
+.valores-casos {
+  font-weight: 600;
+}
+.bi-check {
+  font-size: 1.5em;
+}
+/****** COLUMNA DE VALORES **********/
+.riesgos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--clr-background);
+}
+.riesgos-img-container {
 
+  padding: 50px;
+}
+.riesgos-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.riesgos-info-container ul {
+  list-style-position: inside;
+}
+/****** COLUMNA DE VALORES **********/
+.propuesta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-background2);
+  padding-block: 50px;
+  gap: 2em;
+}
+.propuesta h2 {
+  padding-top: 50px;
+}
+.props-card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.prop-card {
+  width: 25%;
+}
+.prop-card img {
+  width: 100%;
+}
+.prop-card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
