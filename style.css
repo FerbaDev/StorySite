@@ -176,6 +176,35 @@ main {
   display: flex;
   justify-content: space-evenly;
 }
+/********************** SECCIÓN PAQUETES Y PRECIOS ****************/
+.paquetes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 100px;
+  gap: 3.5em;
+  background-color: var(--clr-background2);
+}
+.planes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card-planes {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.3em;
+}
+.card-planes-title {
+  font-weight: bold;
+}
+.card-planes span {
+  font-size: 3em;
+}
+
+
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
