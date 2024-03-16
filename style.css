@@ -420,6 +420,7 @@ footer {
 .props-card-container {
   flex-direction: column;
   align-items: center;
+  gap: 3em;
 }
 .prop-card {
   width: 80%;
@@ -432,7 +433,47 @@ footer {
 
 .clients-logos-container {
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
+}
+/********************** SECCIÓN PAQUETES Y PRECIOS ****************/
+.paquetes-container {
+  padding-block: 50px;
+  gap: 3.8em;
+
+}
+.precios-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+.card-precios {
+  width: 80%;
+  text-align: center;
+  gap: 1.3em;
+}
+.card-precios-title {
+  font-weight: bold;
+}
+.card-precios span {
+  font-size: 3em;
+}
+/********************** SECCIÓN PLANTILLA DE PLAN ****************/
+.plan-container {
+  padding-block: 50px;
+}
+.plan-cards-container {
+  gap: 4em;
+}
+.card-plan {
+  flex-direction: column-reverse;
+  width: 90%;
+  height: fit-content;
+}
+.card-plan img {
+  width: 100%;
+}
+.plan-info {
+  padding: 0;
 }
 }
 
