@@ -489,6 +489,21 @@ footer {
   width: 100%;
   align-items: center;
 }
+/********************** SECCIÓN MAPA ****************/
+.mapa {
+  padding-block: 50px;
+  padding-inline: 20px;
+  flex-direction: column-reverse;
+  gap: 2em;
+}
+.sec-mapa iframe {
+  max-width: 100%;
+}
+.info-lugar {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
