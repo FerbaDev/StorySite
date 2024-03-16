@@ -475,6 +475,20 @@ footer {
 .plan-info {
   padding: 0;
 }
+/********************** SECCIÓN PARRAFO EXPLICATIVO ****************/
+.parrafo-explicativo {
+  padding-block: 50px;
+  flex-direction: column;
+  padding-inline: 20px;
+  gap: 3em;
+}
+.parrafo-explicativo img {
+  max-width: 100%;
+}
+.info-pe {
+  width: 100%;
+  align-items: center;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
