@@ -311,10 +311,7 @@ footer {
 .enlaces-card ul {
   list-style: none;
 }
-.footer-copyright {
-  display: flex;
-  gap: 0.5em;
-}
+
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
@@ -503,6 +500,37 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+/********************** FOOTER ****************/
+footer {
+  height: 500px;
+  padding-inline: 20px;
+}
+.footer-head {
+  flex-direction: column;
+  height: 400px;
+  gap: 2em;
+}
+.footer-redes {
+  padding: 0;
+  gap: 1em;
+}
+.footer-links-redes {
+  justify-content: flex-start;
+  font-size: 1.3em;
+  gap: 1.3em;
+}
+.footer-enlaces {
+  width: 100%;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+.enlaces-card {
+  gap: 1em;
+  width: 50%;
+}
+.footer-copyright {
+  text-align: center;
 }
 }
 
