@@ -424,7 +424,16 @@ footer {
 .prop-card {
   width: 80%;
 }
+/********************** SECCIÓN DISEÑOS DE GUÍA ****************/
+.designs {
+  padding-block: 50px;
+  gap: 2em;
+}
 
+.clients-logos-container {
+  flex-direction: column;
+  gap: 1.5em;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
