@@ -123,7 +123,7 @@ main {
 .riesgos-info-container ul {
   list-style-position: inside;
 }
-/****** COLUMNA DE PROPUESTAS **********/
+/****** COLUMNA DE PROPUESTAS DE VALOR **********/
 .propuesta {
   display: flex;
   flex-direction: column;
@@ -305,7 +305,6 @@ footer {
 .enlaces-card {
   display: flex;
   flex-direction: column;
-
   gap: 1.5em;
 }
 .enlaces-card ul {
@@ -534,8 +533,104 @@ footer {
 }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape TABLETS, 601px hasta 919px) */
+/****************** TABLETS ************************/
+@media only screen and (min-width: 601px) and (max-width: 991px){
+  /****** SECCION TITULO **********/
+main {
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+}
+.ts-info {
+  padding: 80px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.ts-img-container {
+  width: 100%;
+}
+/****** SECCION RIESGOS **********/
+.riesgos {
+  flex-direction: column-reverse;
+  padding-block: 50px;
+}
+.riesgos-img-container {
+  padding: 50px;
+}
+.riesgos-info-container {
+  align-items: center;
+}
+/****** COLUMNA DE PROPUESTAS DE VALOR **********/
+.propuesta {
+  gap: 4em;
+}
+.propuesta h2 {
+  padding-top: 10px;
+}
+.props-card-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.prop-card {
+  display: flex;
+  width: 90%;
+}
+.prop-card img {
+  width: 100%;
+}
+.prop-card-info {
+  justify-content: center;
+}
+/********************** SECCIÓN DISEÑOS DE GUÍA ****************/
+.designs {
+  padding-block: 50px;
+}
+.design-info {
+  gap: 2em;
+}
+.clients-logos-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+/********************** SECCIÓN PLANTILLA DE PLAN ****************/
+
+.card-plan {
+  width: 90%;
+
+  gap: 2em;
+}
+.card-plan img {
+  width: 40%;
+}
+.plan-info {
+  padding: 14px;
+  gap: 1em;
+  width: 60%;
+}
+/********************** SECCIÓN MAPA ****************/
+.mapa {
+  padding-block: 50px;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.info-lugar {
+  width: 100%;
+  align-items: flex-start;
+  padding-inline-start: 40px;
+}
+/********************** FOOTER ****************/
+footer {
+  height: 300px;
+}
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
